@@ -1,35 +1,183 @@
- <!DOCTYPE html>
- <html lang="en">
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <img src="https://piskel-imgstore-b.appspot.com/img/0c2834cf-ce40-11ef-96e3-f5052c46cd3e.gif" class="center">
-    <head>
-        <script>
-            function show_poster() {
-                document.getElementById('message')
-                .innerHTML = "Good Morning";
-            }
-            function show_todos() {
-                document.getElementById('message')
-                .innerHTML = "Good Morning";
-            }
-            function myFunction() {
-                var x = document.getElementById("message");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-                } else {
-                    x.style.display = "none";
-                }
-            }
-        </script>
-    <body>
-        <div class="container">
-            <button class="button" onclick=show_poster();>Poster</button>
-            <button class="button">Our Report</button>
-            <button class="button">How You can help</button>
-            <h1 id="message">
-                Test
-            </h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Navigable Tabs in HTML</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: white;
+        }
+
+        .container {
+            border: 1px solid grey;
+            margin: 1rem;
+        }
+
+        [data-tab-info] {
+            display: none;
+        }
+
+        .active[data-tab-info] {
+            display: block;
+        }
+
+        .tab-content {
+            margin-top: 1rem;
+            padding-left: 1rem;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+
+        .tabs {
+            border-bottom: 1px solid grey;
+            background-color: rgb(16, 153, 9);
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+            display: flex;
+            margin: 0;
+        }
+
+        .tabs span {
+            background: rgb(16, 153, 9);
+            padding: 10px;
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        .tabs span:hover {
+            background: rgb(55, 219, 46);
+            cursor: pointer;
+            color: black;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%
+        }
+    </style>
+</head>
+    <img src="https://piskel-imgstore-b.appspot.com/img/0c2834cf-ce40-11ef-96e3-f5052c46cd3e.gif" class="center">
+<body>
+
+    <!-- Body Container -->
+    <div class="container">
+
+        <!-- Tabs Detail -->
+        <div class="tabs">
+            <span data-tab-value="#tab_1">Tab 1</span>
+            <span data-tab-value="#tab_2">Tab 2</span>
+            <span data-tab-value="#tab_3">Tab 3</span>
         </div>
-   </body>
-</html> 
+
+        <!-- Tab content -->
+        <div class="tab-content">
+            <div class="tabs__tab active" id="tab_1" data-tab-info>
+               <p><strong><span data-contrast="auto">ACADEMIC REPORT</span></strong><span data-ccp-props="{}">&nbsp;</span></p>
+<p><strong><span data-contrast="auto">Title:</span></strong> <span data-contrast="auto">Does mining pollute the environment worldwide?</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><strong><span data-contrast="auto">Topic:</span></strong><span data-contrast="auto"> Environment, Pollution and Conservation</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><strong><span data-contrast="auto">School:</span></strong> <span data-contrast="auto">Gems Winchester School, Dubai</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><strong><span data-contrast="auto">Authors:</span></strong><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">- Gebrielle Manankil David</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><strong><span data-contrast="auto">Introduction:</span></strong><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Extracting minerals from the Earth&rsquo;s surface, including the seas, involves extraction, management, and methods.</span><span data-contrast="auto"><span data-fontsize="11">1</span></span><span data-contrast="auto">. The industry is especially economically prominent for countries like coal, diamond, oil, metallic ores, etc.</span><span data-contrast="auto"><span data-fontsize="11">2</span></span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Globally, the industry is dependent on mineral supplies, its revenue can amount to 943 billion US dollars as reported in 2022</span><span data-contrast="auto"><span data-fontsize="11">3</span></span><span data-contrast="auto">, which is important as mining is indispensable in the modern day as it provides advancements in technology, economics, and infrastructure</span><span data-contrast="auto"><span data-fontsize="11">4</span></span><span data-contrast="auto">.&nbsp;</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">While this is beneficial given modern demands and improvements, mining causes environmental damages that affect the atmosphere through CO2, contributing to climate change.</span><span data-contrast="auto"><span data-fontsize="11">5</span></span><span data-contrast="auto">, along with habitat loss and pollution making this issue not confined to just one region but worldwide.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">This report will examine the extent to which mining contributes to global environmental pollution and its effects on nearby communities. It will also investigate the ecological impacts of mining, such as carbon emissions and land and water degradation, and the necessity of sustainable mining practices to mitigate these effects.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><strong><span data-contrast="auto">Background:</span></strong><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">While the first mined material (flint) was largely used for weaponry, the industry gradually branched out to other metals like gold, copper, iron, etc. Lead was produced in Troy as early as 2500 BCE.</span><span data-contrast="auto"><span data-fontsize="11">6</span></span><span data-contrast="auto">.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">These materials can be extracted and are vital for profit, especially since they include non-renewable resources like petroleum and natural gas.</span><span data-contrast="auto"><span data-fontsize="11">7</span></span><span data-contrast="auto">. With this usage of raw materials, there are cornerstones of global industrial development with its uses being prominent in infrastructure, economy, and material innovation.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Over time, the industry developed from primitive to complicated methods and to meet the rising demand for metals and minerals necessary for sustainability and technology, mining has evolved into a globalized sector controlled by multinational firms to the point that 8.5 billion metric tons of coal are mined in 2023 while demand for metal also increases by an estimated 7 billion metric tons in 2022-50</span><span data-contrast="auto"><span data-fontsize="11">8</span></span><span data-contrast="auto">.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><strong><span data-contrast="auto">Methods:</span></strong><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">From human labour to highly advanced equipment, mining practices change with the kind of material being mined, the locations, and economic and environmental factors influencing the mining techniques in the extraction, which would have varying degrees of environmental impact.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Surface mining is the most common method as its ores (coal, iron, and bauxite) are extracted from the Earth&rsquo;s surface. It is more cost-effective, unlike underground mining.</span><span data-contrast="auto"><span data-fontsize="11">9</span></span><span data-contrast="auto">, since they are typically used for less valuable minerals</span><span data-contrast="auto"><span data-fontsize="11">10</span></span><span data-contrast="auto">. The removal of the overlaying soil and rocks covering the minerals to extract the ores</span><span data-contrast="auto"><span data-fontsize="11">11</span></span><span data-contrast="auto"> Through various approaches like the use of drills, explosives, and the removal of a mountain's top (exposing the minerals underneath).</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Surface mining is seen as safer as it eliminates the risks of underground risks (cave-ins and toxic gases), giving space and improving ventilation and visibility.</span><span data-contrast="auto"><span data-fontsize="11">12</span></span><span data-contrast="auto">. It&rsquo;s also considered cheaper as it doesn&rsquo;t require extensive equipment, enabling businesses to extract minerals effectively.</span><span data-contrast="auto"><span data-fontsize="11">13</span></span><span data-contrast="auto">, resulting in more profit as more than 1/3 of the world&rsquo;s yearly output relies on this method</span><span data-contrast="auto"><span data-fontsize="11">14</span></span><span data-contrast="auto"> totalling nearly 25 billion tonnes</span><span data-contrast="auto"><span data-fontsize="11">15</span></span><span data-contrast="auto">.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">While surface mining extracts the minerals in the crust, underground mining utilizes a team of miners to blast through the rock creating a path to reach the ores within the Earth&rsquo;s surface using tunnel excavations, vent filtration and mine shafts against hazards while mining high&ndash;grade minerals (gold, lead and, silver) to create profit and produce less waste.</span><span data-contrast="auto"><span data-fontsize="11">16</span></span><span data-contrast="auto"> while simultaneously decreasing exposure to the weather</span><span data-contrast="auto"><span data-fontsize="11">17</span></span><span data-contrast="auto">.&nbsp; Especially since worldwide 40% account for this mining method is used </span><span data-contrast="auto"><span data-fontsize="11">18</span></span><span data-contrast="auto">.&nbsp;</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">However, due to certain tools being used like crane lifts, mining drills, loaders, etc., the depth is shallow from 300m to 3km and after the extraction it is transported by either truck or train.</span><span data-contrast="auto"><span data-fontsize="11">19</span></span><span data-contrast="auto">. This a more expensive, process, regularly requiring maintenance as reported by Shibang Machinery, China (a high-tech mineral processing company), the general small to medium-scale costs can range from $1-$20 million with the large scale being 10x more expensive, compared to surface mining range of $500,000 - $1 million and their large scale being just 100 million.</span><span data-contrast="auto"><span data-fontsize="11">20</span></span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Placer mining (known as panning) is the extraction of minerals from rivers. Since the minerals (gold and gemstones) have a certain density and are sorted using steam beds or rivers submerged in still water, "The California Gold Rush" is a well-known example even though the technique is the simplest but most time-consuming.</span><span data-contrast="auto"><span data-fontsize="11">21</span></span><span data-contrast="auto"> Since it involves using water to wash the minerals from deposits</span><span data-contrast="auto"><span data-fontsize="11">22</span></span><span data-contrast="auto"> This consists of smaller minerals than underground mining since the rock layers are exposed to tectonic movements that lead to their location in rivers/ streams.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">US Geological Survey reported that more than 1/3 are mined worldwide while roughly half occurs in states of Canada.</span><span data-contrast="auto"><span data-fontsize="11">23</span></span><span data-contrast="auto"> And northern California due to its rich geological variety of resources. Especially since California produced 40 </span><span data-contrast="auto">million troy</span><span data-contrast="auto"> ounces (1133980.92kg) of gold using placers and Alaska has roughly 21 million ounces 13 million coming from the interior regions alone demonstrating its relevant usage today for separating heavily eroded minerals like gold from sand/ gravel.</span><span data-contrast="auto"><span data-fontsize="11">24</span></span><span data-contrast="auto">.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">The process of extracting minerals from the deep-sea floor is known as &lsquo;&rsquo;Marine mining." found mostly on the abyssal plain at depths of 4&ndash;6 km (2.5&ndash;3.7 mi). Over 21 billion metric tonnes are found in the Clarion&ndash;Clipperton zone alone, and 2.5% of its weight is composed of minerals including cobalt, nickel, and copper, 5x the quantity found in terrestrial reserves, which are thought to be stored beneath the ocean floor worldwide.</span><span data-contrast="auto"><span data-fontsize="11">25</span></span><span data-contrast="auto">However, it isn&rsquo;t exploited as much because the technology required has yet to be developed, and there is a lack of knowledge regarding the sources.</span><span data-contrast="auto"><span data-fontsize="11">26</span></span><span data-contrast="auto">.&nbsp;</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Despite this, investments in these precious metals are on the ocean floor (particularly in the Pacific Ocean) as they can find minerals like nickel, copper, zinc, and other rare-earth metals.</span><span data-contrast="auto"><span data-fontsize="11">27</span></span><span data-contrast="auto"> Using robotic equipment like seabed collectors or undersea mapping. Demands increase each passing year, as does global metal and commercial demand, like electronics.</span><span data-contrast="auto"><span data-fontsize="11">28</span></span><span data-contrast="auto">&nbsp;</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">The International Seabed Authority (ISA) is regulating mining-related activities in international waters as of 2024, granting 31 licenses as of 2024</span><span data-contrast="auto"><span data-fontsize="11">29</span></span><span data-contrast="auto"> likely favouring India, China and Norway despite some governments considering a ban regarding the potential harm to the ocean</span><span data-contrast="auto"><span data-fontsize="11">30</span></span><span data-contrast="auto"> Canada, New Zealand and the UK are already temporarily prohibiting activity while the others are still cautious.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Finally, In-situ (solution mining) uses chemicals (weak HCl &amp; sulfuric acid) that are injected into our ore body to dissolve the metal to flow to the surface and can be used above and underground (1,000 meters) to recover minerals like copper and uranium.</span><span data-contrast="auto"><span data-fontsize="11">31</span></span><span data-contrast="auto"> The process used is often cheaper than other methods that cost $1,000, even though it contaminates ground and drinking water.</span><span data-contrast="auto"><span data-fontsize="11">32</span></span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Since the growing demand is anticipated for investments over time while minimising engineering risk compared to average mines, worldwide it&rsquo;s an estimated 4.25 USD billion in 2022 and has an expected growth from 4.43 billion (2023) to 6.45 billion by 2032.</span><span data-contrast="auto"><span data-fontsize="11">33</span></span><span data-contrast="auto"> The US alone is a crucial market for solution mining, with the Environmental Protection Agency reporting 165 mining sites with 18,500 class III injection wells to extract these minerals. However, they require a significant amount of energy and water.</span><span data-contrast="auto"><span data-fontsize="11">34</span></span><span data-contrast="auto"> Along with Adhering to regulations, areas are checked for alpha and gamma radiation and interaction with radioactive releases.</span><span data-contrast="auto"><span data-fontsize="11">35</span></span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><strong><span data-contrast="auto">DISCUSSION:</span></strong><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Cerro de Pasco, a city in central Peru, has a long history of mining activities, particularly for lead, copper, zinc, and silver.</span><span data-contrast="auto"><span data-fontsize="10">36</span></span><span data-contrast="auto"> About 10% of GDP comes from mining, and in 2022, mining exports were worth $66 billion, or roughly 57% of all exports by value. Since the beginning of the twentieth century, Cerro de Pasco has been mined for industrial purposes. However, its mining history dates back to the 17th century, when prospectors were drawn to the area by its lead, zinc, and silver wealth, making it Peru's second-largest city.</span><span data-contrast="auto"><span data-fontsize="10">37</span></span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="none">However, heavy metal concentrations in soil and water are far beyond national and World Health Organisation (WHO) safety regulations, resulting from these operations' substantial environmental contamination. For example, Peruvian standards allow up to 0.05 mg/L of lead in drinking water, although WHO guidelines call for 0.01 mg/L. This regulatory disparity puts the local population's health at risk.</span><span data-contrast="none"><span data-fontsize="10">38</span></span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="none">But despite these alarming findings, the Peruvian government and Volcan, the mining company operating in Cerro de Pasco, have been criticised for inadequate remediation efforts and have done little to nothing to remediate contamination and respond to the communities&rsquo; pleas for help.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">According to a report</span><span data-contrast="auto"><span data-fontsize="10">39</span></span><span data-contrast="auto"> According to local officials released last year, at least 2,000 children in the Pasco region suffer from chronic heavy metal toxicity as a result of the mining operations' inaction </span><span data-contrast="none">(a disorder that, particularly in children under six, can have a significant impact on both mental and physical development because heavy meats adhere to cells)</span><span data-contrast="none"><span data-fontsize="10">40</span></span><span data-contrast="none">, Furthermore, the city's mining waste impacts the water supply for more than 100,000 people. According to investigations, the San Juan River, which runs from Cerro de Pasco south to Jun&iacute;n Lake, contains at least four heavy metals in concentrations higher than WHO guidelines (the WHO recommends 0.01 mg/L of lead in water, while Peru's is 0.05 mg/L), including arsenic and lead. </span><span data-contrast="auto"><span data-fontsize="10">41</span></span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="none">In response to enquiries, the government stated that the water and air quality falls within the national norm set by the National Standard for the Environmental Quality of Air. Implying that Cerro de Pasco's air and water were uncontaminated by the mining. However, they refused to respond when it was brought up that the WHO's criteria for heavy metal concentrations in water are more stringent and that they would like to clarify their remarks accordingly. It calls into question how well the current environmental laws and their implementation safeguard the public's health.&nbsp;</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p>&nbsp;<br /><span data-contrast="none">When the Natural Resource Governance Institute (a group devoted to enhancing nations' management of their natural resources</span><span data-contrast="auto"><span data-fontsize="10">42</span></span><span data-contrast="auto">),&nbsp; </span><span data-contrast="none">Peru received a "satisfactory" 62/100 rating from the non-profit Natural Resource Governance Institute (NRGI) last year, but Carlos Monge, NRGI's director for Latin America, is concerned that ambition may entice profitable mining projects to Peru, which could result in a deterioration of environmental standards and a further escalation of public health risks.</span><span data-contrast="auto"><span data-fontsize="10">43</span></span><span data-contrast="auto">&nbsp;</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">In conclusion, the Cerro de Pasco situation emphasises the urgent need for stronger environmental laws, better enforcement of current standards, and preventative actions to alleviate the serious negative effects of mining-related pollution on human health.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><strong><span data-contrast="auto">RESULTS:</span></strong><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">As demonstrated, the 5 types of mining can effectively extract and profit from the earth's resources with appeal in investment worldwide, these productions improve our daily lives and provide the country foundation economically like Australia generating $271 Billion in export revenues in 2020 as reported by the Minerals Council of Australia (a leading advocate for Australia mining industry.</span><span data-contrast="auto"><span data-fontsize="11">44</span></span><span data-contrast="auto">) with 10% of mining income accounting for the whole economy.</span><span data-contrast="auto"><span data-fontsize="11">45</span></span><span data-contrast="auto"> These mining operations have caused significant harm despite greatly boosting developing countries A recognised by the UN on sustainable development.</span><span data-contrast="auto"><span data-fontsize="11">46</span></span><span data-contrast="auto"> As even though people are providing these minerals that benefit the country it has harmed the surrounding environment as it has been an increasing issue in recent years.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Mining occurs at the Earth's surface, causing significant soil contamination due to chemical extraction and heavy machinery. Surface mining is destructive, causing explosions, vegetation loss, leaks, and radioactive elements leaking into bedrock, exposing erosions and exposing erosion areas to the surrounding environment.</span><span data-contrast="auto"><span data-fontsize="11">47</span></span><span data-contrast="auto">&nbsp; Mercury is commonly used but is a major concern as when heated it releases toxic vapours with 33% of artisanal miners suffering from mercury vapour intoxication.</span><span data-contrast="auto"><span data-fontsize="11">48</span></span><span data-contrast="auto"> Along with increasing sedimentation from nearby rivers from the explosions making it difficult for vegetation.&nbsp;</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Regions like Appalachia, which is rich in coal resources and employed 27,632 people in 2023</span><span data-contrast="auto"><span data-fontsize="11">49</span></span><span data-contrast="auto">, leading to activities like mountain-top removal can result in acid seepage and water contamination with traces of metals (arsenic, cobalt, zinc etc.) that can last for hundreds of or thousands of years</span><span data-contrast="auto"><span data-fontsize="11">50</span></span><span data-contrast="auto">, thus harming aquatic life, and biodiversity and making water quality unusable to the point that its acidity can burn the skin</span><span data-contrast="auto"><span data-fontsize="11">51</span></span><span data-contrast="auto">, but this can depend on the extent of the mineral&rsquo;s overburden (waste from mining not containing toxic components</span><span data-contrast="auto"><span data-fontsize="11">52</span></span><span data-contrast="auto">).</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">&nbsp;</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">&nbsp;Additionally, with the increase of 52% surging demands businesses (particularly in coal and gold) expanded contributing to a serious level of deforestation of large areas of trees making mining the main reason globally </span><span data-contrast="auto"><span data-fontsize="11">53</span></span><span data-contrast="auto"> Affecting the locals and the world at an increasing rate. From 2001 to 2020, (the World Resource Institute, which studies sustainable business practices</span><span data-contrast="auto"><span data-fontsize="11">54</span></span><span data-contrast="auto">) at the University of Maryland, found that around 1.4 million hectares of land from mining and related operations (roughly the area of Montenegro and 260,000 hectares are from indigenous lands) consequently releasing 36 million tonnes per year.</span><span data-contrast="auto"><span data-fontsize="11">55</span></span><span data-contrast="auto"> Indonesia reportedly has the biggest mining-related deforestation with over 3,500 km</span><span data-contrast="auto"><span data-fontsize="11">2</span><span data-fontsize="11">&nbsp; </span></span><span data-contrast="auto">With Brazil following 2</span><span data-contrast="auto"><span data-fontsize="11">nd</span></span><span data-contrast="auto"> with 1,600km</span><span data-contrast="auto"><span data-fontsize="11">2</span></span><span data-contrast="auto">. This means that mining has surpassed factors like agriculture and cattle as the leading cause of deforestation in some nations, notably Suriname increased by 522% causing 421.3km</span><span data-contrast="auto"><span data-fontsize="11">2</span></span><span data-contrast="auto"> deforestation in 22 years (85% is caused by artisanal mining which is small-scales)</span><span data-contrast="auto"><span data-fontsize="11">56</span></span><span data-contrast="auto">.&nbsp;</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">However, deforestation relied on by mining hasn't been the only factor causing climate change. Carbon monoxide, when released into the atmosphere during mineral extraction, traps heat and raises the average global temperature by 1C. Furthermore, in 2018, coal, a fossil fuel, was accountable for 89% of the world's CO2.</span><span data-contrast="auto"><span data-fontsize="11">57</span></span><span data-contrast="auto"> Raising concerns about government pressure to cut emissions, as mining accounts for 4-7% of world emissions, with coal burning accounting for a major 20% of emissions along with power required to function contributes to 0.4 gigatons (0.4 billion tons)</span><span data-contrast="auto"><span data-fontsize="11">58</span></span><span data-contrast="auto">.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">However, involvement in technological advancement can develop towns with mining opportunities and increase population and wages, making mining a major source of income since they are often located in plateau areas (60%), areas rich in mineral and gemstone deposits.</span><span data-contrast="auto"><span data-fontsize="11">59</span></span><span data-contrast="auto">.&nbsp; This fuels our modern lives making them indispensable with examples like the construction of buildings as bricks and glass. The main component is sand which is often extracted via sand mining. As stated by the Observatory of Economic Complexity (the world's leading data visualization for international trade</span><span data-contrast="auto"><span data-fontsize="11">60</span></span><span data-contrast="auto">) Singapore is the largest importer with 13% of mining the world's sand, Canada being 2</span><span data-contrast="auto"><span data-fontsize="11">nd</span> </span><span data-contrast="auto">(11%)</span><span data-contrast="auto"><span data-fontsize="11">61</span></span><span data-contrast="auto">. Finally, the industry provides employment opportunities in rural areas which creates diverse options supporting trade despite the lack of high wages. An example is Switzerland, which is ranked as the 2024 largest mining employer with nearly 84,000 people.</span><span data-contrast="auto"><span data-fontsize="11">62</span></span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><strong><span data-contrast="auto">SOLUTION:&nbsp;</span></strong><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">As demonstrated, mining has boosted the economy and provided jobs, but it has also had a significant negative impact on the environment, especially considering the growing concern over climate change and overpopulation. However, despite adopting environmentally friendly technology and practising sustainability like the theKamoa copper which is powered by clean, renewable hydro-generated electricity and is among the world&rsquo;s lowest greenhouse emitters per metal produced</span><span data-contrast="auto"><span data-fontsize="11">63</span></span><span data-contrast="auto">. It won't be easy to reduce or abolish because the industry meets the needs, especially in developing countries.</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">The UN environmental program response calls for partnerships with governments, mining corporations, and local communities to support sustainable development and encourage ethical mining practices. With recommendations like the Strategic Environmental and Social Assessment (SESA), which identifies and elucidates environmental and social potential consequences, community development agreements (CDAs) projects involve formal agreements between companies and local communities outlining support focusing on their needs while raising mining concerns. This promotes better relations, allowing needs to be addressed and benefits to be shared, thereby reducing conflicts.</span><span data-contrast="auto"><span data-fontsize="11">64</span></span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Some nations have even placed laws that can ease the burden on the environment through environmental impact assessments (EIAs), where decision-makers examine the consequences of the environment and work to prevent or mitigate them while making sure the proposals are understood.</span><span data-contrast="auto"><span data-fontsize="11">65</span></span><span data-contrast="auto"> Increasing the recycling rates of some metals, especially crucial minerals used in the production of EV batteries, may also help us reduce our reliance on mining.</span><span data-contrast="auto"><span data-fontsize="11">66</span></span><span data-ccp-props="{}"> <br /></span></p>
+            </div>
+            <div class="tabs__tab" id="tab_2" data-tab-info>
+                <img></img>
+
+            </div>
+            <div class="tabs__tab" id="tab_3" data-tab-info>
+                <p>Learn cool stuff.</p>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        // function to get each tab details
+        const tabs = document.querySelectorAll('[data-tab-value]')
+        const tabInfos = document.querySelectorAll('[data-tab-info]')
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = document
+                    .querySelector(tab.dataset.tabValue);
+                tabInfos.forEach(tabInfo => {
+                    tabInfo.classList.remove('active')
+                })
+                target.classList.add('active');
+            })
+        })
+    </script>
+</body>
+
+</html>
+
